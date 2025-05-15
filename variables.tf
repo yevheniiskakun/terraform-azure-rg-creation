@@ -1,6 +1,6 @@
 variable "resource_group_location" {
   type        = string
-  default     = "mexicocentral"
+  default     = "mexicocentral" # region where resources will be deployed. Can be get from https://www.jlaundry.nz/2022/azure_region_abbreviations/
   description = "Location of the resource group."
 }
 
@@ -13,5 +13,5 @@ variable "resource_group_name_prefix" {
 variable "environment" {
   type        = string
   default     = "dev"
-  description = "Prefix of the resource group name that's combined with a random ID so name is unique in your Azure subscription."
+  description = "Name of the environment where recource is belong"
 }
